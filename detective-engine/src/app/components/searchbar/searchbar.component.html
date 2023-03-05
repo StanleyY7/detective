@@ -1,0 +1,32 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-2">
+      <img
+        class="container__image"
+        src="../../../assets/detective logo.svg"
+        alt="logo__image"
+      />
+    </div>
+    <div class="col-md-10">
+      <div class="input-group">
+        <input
+          type="text"
+          class="form-control"
+          placeholder="What can I look into for you today?"
+          [(ngModel)]="searchTerm"
+          (keypress)="handleEnter($event)"
+        />
+        <div class="input-group-append">
+          <button
+            type="button"
+            class="btn btn-outline-secondary"
+            (click)="searchWeb()"
+            (keypress)="handleEnter($event)"
+          >
+            <em class="fa fa-search"></em>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

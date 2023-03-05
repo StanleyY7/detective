@@ -1,0 +1,13 @@
+<div class="results__wrapper">
+  <p>{{ count }} results</p>
+  <div class="result" *ngFor="let result of results">
+    <a [href]="result?.url" class="title" target="_blank">
+      <h4>
+        <em class="fa fa-check-circle" *ngIf="result?.isSafe"></em>
+        {{ result.title }}
+      </h4>
+    </a>
+    <a [href]="result?.url" class="url" target="_blank">{{ result.url }}</a>
+    <p>{{ result.description }}</p>
+  </div>
+</div>

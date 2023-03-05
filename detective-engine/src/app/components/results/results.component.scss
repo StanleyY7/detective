@@ -1,0 +1,16 @@
+.results__wrapper {
+  margin-top: 2rem;
+
+  .result {
+    margin-top: 2rem;
+
+    > .title {
+      text-decoration: none;
+    }
+  }
+}
+
+.fa {
+  font-size: 1rem;
+  color: rgb(75, 198, 157);
+}

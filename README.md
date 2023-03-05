@@ -7,3 +7,4 @@ A angular side/hobby project whereby I practiced using Angular and working with 
 Left to do:
 - making it responsive.
 - pagination.
+- hosting/deployment onto github pages

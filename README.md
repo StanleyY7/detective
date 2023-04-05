@@ -4,7 +4,12 @@
 
 An angular side/hobby project whereby I practiced using Angular and working with an API within an Angular environment to create a mock search engine using a web search API. This side-project also involved using Bootstrap and font-awesome libraries. 
 
+## Features
+
+- Ability to search the web
+- Pagination
+- Responsive
+- Jasmine Component Tests
+
 Left to do:
-- making it responsive.
-- pagination.
 - hosting/deployment onto github pages

@@ -14,7 +14,7 @@ export class SearchService {
 
   getResults(searchTerm: string): Observable<any> {
     return this.http.get(
-      `https://contextualwebsearch-websearch-v1.p.rapidapi.com/api/Search/WebSearchAPI?q=${searchTerm}&pageNumber=1&pageSize=15&autoCorrect=true`,
+      `https://contextualwebsearch-websearch-v1.p.rapidapi.com/api/Search/WebSearchAPI?q=${searchTerm}&pageNumber=1&pageSize=100&autoCorrect=true`,
       {
         headers: {
           'x-rapidapi-key': this.apiKey,

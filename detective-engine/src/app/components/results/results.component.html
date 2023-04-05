@@ -1,6 +1,6 @@
 <div class="results__wrapper">
-  <p>{{ count }} results</p>
-  <div class="result" *ngFor="let result of results">
+  <p class="resultsCount">{{ count }} results</p>
+  <div class="result" *ngFor="let result of pagedResults">
     <a [href]="result?.url" class="title" target="_blank">
       <h4>
         <em class="fa fa-check-circle" *ngIf="result?.isSafe"></em>
@@ -9,5 +9,14 @@
     </a>
     <a [href]="result?.url" class="url" target="_blank">{{ result.url }}</a>
     <p>{{ result.description }}</p>
+  </div>
+  <div class="pagination">
+    <button
+      *ngFor="let pageNumber of pageNumbers"
+      [class.active]="pageNumber === currentPage"
+      (click)="changePage(pageNumber)"
+    >
+      {{ pageNumber }}
+    </button>
   </div>
 </div>

@@ -36,3 +36,16 @@
     }
   }
 }
+
+@media only screen and (max-width: 768px) {
+  .col-md-2 {
+    .container__image {
+      width: 18rem;
+    }
+  }
+
+  .input-group {
+    margin-top: 2rem;
+    margin-left: 2rem;
+  }
+}
